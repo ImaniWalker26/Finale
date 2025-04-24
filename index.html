@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="screen.css">
-  </head>
-  <body>
-    <h1>Home</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-    <script src="index.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smoothie Surprise 🍓</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="screen.css" />
+</head>
+<body class="bg-pink-200 min-h-screen flex flex-col items-center justify-start p-6 space-y-10">
+
+  <!-- Glowing Title -->
+  <h1 class="text-6xl font-extrabold text-white bg-gradient-to-r from-pink-500 via-red-400 to-yellow-400 border-4 border-rose-300 px-6 py-4 rounded-xl shadow-2xl glow-title mt-6 text-center">
+    🍓 Smoothie Surprise 🍌
+  </h1>
+
+  <!-- Random Smoothie Button -->
+  <button id="smoothieBtn" class="smoothie-btn">Get a Random Smoothie Recipe</button>
+  <div id="smoothieLink" class="text-blue-700 underline text-lg text-center"></div>
+
+  <!-- Submit Smoothie Recipe Form -->
+  <div class="w-full max-w-md bg-white p-6 rounded-xl shadow-md text-center">
+    <h2 class="text-xl font-semibold mb-4 text-rose-600">Submit Your Smoothie Recipe</h2>
+    <form id="submitForm">
+      <input type="url" id="recipeInput" placeholder="https://your-smoothie-blog.com" class="input" required />
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+    <p id="submitMsg" class="text-green-600 mt-2 hidden">Thanks for submitting your recipe!</p>
+  </div>
+
+  <!-- Star Rating Section -->
+  <div class="w-full max-w-md bg-white p-6 rounded-xl shadow-md text-center mb-10">
+    <h2 class="text-xl font-semibold mb-4 text-rose-600">Rate Your Smoothie Experience</h2>
+    <div id="ratingStars" class="flex justify-center gap-2 mb-4"></div>
+    <button id="submitRating" class="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-white px-4 py-2 rounded-xl hover:scale-105 transition">Submit Rating</button>
+    <p id="ratingThanks" class="text-green-600 mt-2 font-semibold hidden">Thanks for your rating! 🌟</p>
+    <p id="extraThanks" class="text-rose-500 mt-2 font-medium hidden">We appreciate your feedback and love for smoothies! 🍓💖</p>
+  </div>
+
+  <script src="index.js"></script>
+</body>
 </html>

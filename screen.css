@@ -1,4 +1,92 @@
-/* Add screen styles below */
-a.active {
-    font-weight: bold;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.glow-title {
+  text-shadow: 0 0 10px rgba(126, 0, 50, 0.6), 0 0 20px rgba(255, 255, 255, 0.4);
+  background-image: linear-gradient(to right, #9f1239, #b91c1c, #a16207);
+  -webkit-background-clip: text;  /* For Safari and older webkit browsers */
+  background-clip: text; /* For compatibility with modern browsers */
+  color: transparent;  /* Ensures the text itself is invisible and the gradient shows */
+}
+
+.smoothie-btn {
+  background: linear-gradient(to right, #f43f5e, #f97316);
+  color: white;
+  font-size: 1.25rem;
+  padding: 1rem 2rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.smoothie-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.submit-btn {
+  background: linear-gradient(to right, #f43f5e, #f97316);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(to right, #f59e0b, #f97316);
+}
+
+#submitMsg, #ratingThanks {
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: none;
+}
+
+#ratingStars {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.star svg {
+  fill: gray;
+  cursor: pointer;
+  transition: fill 0.3s ease, transform 0.2s ease;
+}
+
+.star svg.hovered {
+  fill: #fbbf24;
+  filter: drop-shadow(0 0 10px rgba(255, 213, 0, 0.8));
+  transform: scale(1.1);
+}
+
+.star svg.active-star {
+  fill: #f59e0b;
+  filter: drop-shadow(0 0 10px rgba(255, 200, 0, 0.6));
+}
+
+#smoothieLink {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #1d4ed8;
+  font-weight: bold;
+  text-align: center;
+}
+
+#smoothieLink a:hover {
+  text-decoration: underline;
+  color: #7c3aed;
 }
