@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Submission Confirmation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="screen.css" />
+</head>
+<body class="bg-pink-200 min-h-screen flex flex-col items-center justify-start p-6 space-y-10">
+
+  <h1 class="text-6xl font-extrabold text-white bg-gradient-to-r from-pink-500 via-red-400 to-yellow-400 border-4 border-rose-300 px-6 py-4 rounded-xl shadow-2xl glow-title mt-6 text-center">
+    🍓 Smoothie Surprise 🍌
+  </h1>
+
+  <div id="confirmationMessage" class="w-full max-w-md bg-white p-6 rounded-xl shadow-md text-center">
+    <h2 class="text-xl font-semibold mb-4 text-rose-600">Thank You for Your Submission!</h2>
+    <p>Your smoothie recipe has been successfully submitted. You will be redirected to the main page shortly.</p>
+    <p id="countdownDisplay" class="text-lg font-bold text-pink-600">Redirecting in 10 seconds...</p>
+    <button id="backButton" class="hidden bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-white px-6 py-3 rounded-xl mt-4 hover:scale-105 transition">
+      Click Here if Not Redirected
+    </button>
+  </div>
+
+  <script src="confirmation.js"></script>
+
+</body>
+</html>

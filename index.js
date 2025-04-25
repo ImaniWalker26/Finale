@@ -20,16 +20,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   smoothieBtn.addEventListener('click', () => {
     const randomIndex = Math.floor(Math.random() * smoothieRecipes.length);
-    const url = smoothieRecipes[randomIndex];
-    smoothieLink.innerHTML = `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`;
+    smoothieLink.innerHTML = `<a href="${smoothieRecipes[randomIndex]}" target="_blank" rel="noopener noreferrer">${smoothieRecipes[randomIndex]}</a>`;
   });
 
   submitForm.addEventListener('submit', (e) => {
     e.preventDefault();
     if (recipeInput.value) {
-      submitMsg.classList.remove('hidden');
+      submitMsg.classList.remove('hidden'); 
       submitForm.reset();
-      setTimeout(() => submitMsg.classList.add('hidden'), 3000);
+      window.location.href = 'confirmation.html';
     }
   });
 
@@ -38,8 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     starDiv.classList.add('star');
     starDiv.innerHTML = `
       <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="gray" viewBox="0 0 24 24" class="star-icon">
-        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 
-        9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
       </svg>`;
     starContainer.appendChild(starDiv);
   }

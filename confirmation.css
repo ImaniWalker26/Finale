@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f3f5; 
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2 {
+    font-family: 'Verdana', sans-serif;
+    color: #8b5cf6; 
+  }
+  
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 50px;
+    color: #7c3aed;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #ec4899; 
+  }
+  
+  button {
+    background-color: #8b5cf6;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #6d28d9; 
+  }
+  
+  #countdownDisplay {
+    font-size: 1.2rem;
+    color: #8b5cf6;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #backButton {
+    background-color: #ec4899; 
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #backButton:hover {
+    background-color: #db2777; 
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #confirmationMessage {
+    background-color: #fff;
+    border: 2px solid #f3f4f6;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+    margin: 40px auto;
+    text-align: center;
+  }
+  
+  #confirmationMessage p {
+    font-size: 1.2rem;
+    color: #4ade80; 
+  }
+  
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    #confirmationMessage {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    button, #backButton {
+      width: 100%;
+    }
+  }  

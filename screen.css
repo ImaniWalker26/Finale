@@ -9,9 +9,9 @@ body {
 .glow-title {
   text-shadow: 0 0 10px rgba(126, 0, 50, 0.6), 0 0 20px rgba(255, 255, 255, 0.4);
   background-image: linear-gradient(to right, #9f1239, #b91c1c, #a16207);
-  -webkit-background-clip: text;  /* For Safari and older webkit browsers */
-  background-clip: text; /* For compatibility with modern browsers */
-  color: transparent;  /* Ensures the text itself is invisible and the gradient shows */
+  -webkit-background-clip: text;  
+  background-clip: text; 
+  color: transparent;  
 }
 
 .smoothie-btn {
@@ -88,5 +88,4 @@ body {
 
 #smoothieLink a:hover {
   text-decoration: underline;
-  color: #7c3aed;
 }
